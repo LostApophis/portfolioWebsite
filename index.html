@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Dex · 404</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- YOUR EXISTING HERO GOES HERE (untouched) -->
+<nav class="navbar">
+    <div>
+        <p class="nav-logo">LostApophis.</p>
+    </div>
+    <div></div>
+    <div class="menu">
+        <a href="#home"><p>Home.</p></a>
+        <a href="#about"><p>About.</p></a>
+        <a href="#contact"><p>Contact.</p></a>
+    </div>
+</nav>
+<section class="hero">
+    <div class="hero-bg">
+        <div class="hero-bg-elements"></div>
+        <div><p class="hero-desc">Hey there! I am the architect of my own destruction.</p><p class="hero-text">Lost Apophis.</p><div class="level">
+            <p>Lvl 19 : </p><div class="lvl-bar"></div></div></div>
+        <div class="hero-avatar"><img src="assets/img/haunter.png" alt="Logo"></div>
+    </div>
+</section>
+
+<!-- One continuous window. A future Projects <section> goes after .skills, inside this <main>. -->
+<main class="window">
+
+  <section class="about" id="about" aria-labelledby="bio-title">
+    <img class="insignia" src="assets/img/spectator.png" alt="">
+    <div class="bio">
+      <h2 id="bio-title">Character Bio.</h2>
+      <!-- PLACEHOLDER COPY: rewrite in your own voice -->
+      <p>I got into computers the way most people get into trouble: by taking something apart to see how it worked and not being sure I could put it back. Most of what I know about Linux and the shell comes from exactly that, from broken installs, bad configs and a stubborn refusal to just reinstall.</p>
+      <p>These days I write Python and Bash to automate the boring parts, Java and C++ when I want to see what the machine is really doing, and Angular when I want something I built to actually be looked at. I learn by building first and reading the docs when it breaks, which is slower but it sticks. Right now I'm digging into systems programming and trying to make my interfaces feel less like templates.</p>
+
+      <!-- PLACEHOLDER ATTRIBUTES: change the label, --v (bar width) and the number -->
+      <ul class="attrs">
+        <li style="--v:86%"><span>Adaptability</span><i class="bar"><b></b></i><em>86</em></li>
+        <li style="--v:78%"><span>Curiosity</span><i class="bar"><b></b></i><em>78</em></li>
+        <li style="--v:70%"><span>Problem solving</span><i class="bar"><b></b></i><em>70</em></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="skills" id="skills" aria-labelledby="skills-title">
+    <h2 id="skills-title">Skills.</h2>
+    <div class="sk-body">
+
+      <div class="inspect">
+        <div class="idle">
+          <h3>Select an ability to inspect</h3>
+          <p>Hover over a skill to reveal its details.</p>
+        </div>
+      </div>
+
+      <!--
+        Each <li> = one skill. Edit: --lvl (bar width), the three <dd> values, the img src.
+        Brand colors live in the icon files; swap src (e.g. to a local SVG) to change them.
+        Order matters: tile positions are set by :nth-child in the CSS.
+      -->
+      <ul class="skill-grid">
+        <li class="skill" tabindex="0" style="--lvl:85%">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="">
+          <span class="name">Python</span>
+          <div class="info"><h3>Python</h3><div class="bar"><b></b></div>
+            <dl><dt>Proficiency</dt><dd>Placeholder</dd><dt>Experience</dt><dd>Placeholder</dd><dt>Used in</dt><dd>Placeholder</dd></dl></div>
+        </li>
+        <li class="skill" tabindex="0" style="--lvl:75%">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-original.svg" alt="">
+          <span class="name">Bash</span>
+          <div class="info"><h3>Bash</h3><div class="bar"><b></b></div>
+            <dl><dt>Proficiency</dt><dd>Placeholder</dd><dt>Experience</dt><dd>Placeholder</dd><dt>Used in</dt><dd>Placeholder</dd></dl></div>
+        </li>
+        <li class="skill" tabindex="0" style="--lvl:80%">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" alt="">
+          <span class="name">Linux</span>
+          <div class="info"><h3>Linux</h3><div class="bar"><b></b></div>
+            <dl><dt>Proficiency</dt><dd>Placeholder</dd><dt>Experience</dt><dd>Placeholder</dd><dt>Used in</dt><dd>Placeholder</dd></dl></div>
+        </li>
+        <li class="skill" tabindex="0" style="--lvl:60%">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="">
+          <span class="name">Java</span>
+          <div class="info"><h3>Java</h3><div class="bar"><b></b></div>
+            <dl><dt>Proficiency</dt><dd>Placeholder</dd><dt>Experience</dt><dd>Placeholder</dd><dt>Used in</dt><dd>Placeholder</dd></dl></div>
+        </li>
+        <li class="skill" tabindex="0" style="--lvl:55%">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="">
+          <span class="name">C++</span>
+          <div class="info"><h3>C++</h3><div class="bar"><b></b></div>
+            <dl><dt>Proficiency</dt><dd>Placeholder</dd><dt>Experience</dt><dd>Placeholder</dd><dt>Used in</dt><dd>Placeholder</dd></dl></div>
+        </li>
+        <li class="skill" tabindex="0" style="--lvl:80%">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="">
+          <span class="name">HTML</span>
+          <div class="info"><h3>HTML</h3><div class="bar"><b></b></div>
+            <dl><dt>Proficiency</dt><dd>Placeholder</dd><dt>Experience</dt><dd>Placeholder</dd><dt>Used in</dt><dd>Placeholder</dd></dl></div>
+        </li>
+        <li class="skill" tabindex="0" style="--lvl:70%">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="">
+          <span class="name">JavaScript</span>
+          <div class="info"><h3>JavaScript</h3><div class="bar"><b></b></div>
+            <dl><dt>Proficiency</dt><dd>Placeholder</dd><dt>Experience</dt><dd>Placeholder</dd><dt>Used in</dt><dd>Placeholder</dd></dl></div>
+        </li>
+        <li class="skill" tabindex="0" style="--lvl:50%">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angular/angular-original.svg" alt="">
+          <span class="name">Angular</span>
+          <div class="info"><h3>Angular</h3><div class="bar"><b></b></div>
+            <dl><dt>Proficiency</dt><dd>Placeholder</dd><dt>Experience</dt><dd>Placeholder</dd><dt>Used in</dt><dd>Placeholder</dd></dl></div>
+        </li>
+      </ul>
+
+    </div>
+  </section>
+
+</main>
+</body>
+</html>
