@@ -1,4 +1,4 @@
-/* ===== TOKENS: edit here ===== */
+
 @import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Major+Mono+Display&family=Megrim&family=Road+Rage&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 
@@ -9,9 +9,9 @@
     --line: rgba(255, 255, 255, 0.11);
     --line-hi: rgba(255, 255, 255, 0.4);
     --font-display:
-        "Anton", "Oswald", Impact, sans-serif; /* swap for the hero's display font */
+        "Anton", "Oswald", Impact, sans-serif; 
     --font-body: "Roboto", system-ui, sans-serif;
-    --mono: grayscale(1) brightness(1.35); /* default skill-icon look */
+    --mono: grayscale(1) brightness(1.35); 
     --pad-x: clamp(1.25rem, 4.5vw, 4.25rem);
 }
 *,
@@ -42,7 +42,6 @@ body {
     overflow-x : hidden;
 }
 
-/* Fixed world. Remove if your hero already provides the star field. */
 body::before {
     content: "";
     position: fixed;
@@ -53,7 +52,6 @@ body::before {
 }
 
 
-/* ============The hero section css comes here messy or whatever ==========*/
 .navbar{
     display: flex;
     align-items: center;
@@ -103,7 +101,6 @@ body::before {
     justify-content: space-around;
 }
 
-/*--------Hero---------------*/
 
 .hero{
 
@@ -113,7 +110,7 @@ body::before {
     height: 100vh;
 }
 .hero-desc{
-    font-size: 2em;
+    font-size: 200%;
 }
 
 
@@ -136,19 +133,24 @@ body::before {
     color: rgba(255,255,255,0.8);
     font-family: "Road Rage";
 }
+h1{
+    font-size: 10vw;
+}
 .hero-text{
-    font-size: 12em;
     color: white;
     font-family: "Road Rage";
     margin-bottom:5vh ;
 }
 .hero-avatar img{
     margin-top: 15%;
+    max-width: 100%;
+    max-height: 100%;
     padding: 4px;
 }
 
 .hero-avatar{
     display: flex;
+    max-width: 50%;
     align-items: center;
     justify-content: center;
 }
@@ -169,9 +171,6 @@ body::before {
 }
 
 
-
-
-/* ===== THE WINDOW: one flat translucent sheet. Add Projects as another <section> inside it. ===== */
 .window {
     position: relative;
     width: min(1200px, 100% - 2rem);
@@ -186,7 +185,6 @@ body::before {
     backdrop-filter: blur(2px);
 }
 
-/* ===== ABOUT ===== */
 .about {
     position: relative;
     display: grid;
@@ -274,7 +272,7 @@ body::before {
     display: block;
     height: 10px;
     border: 1px solid var(--ink);
-} /* same language as the hero's Lv bar */
+}
 .bar b {
     display: block;
     height: 100%;
@@ -282,7 +280,6 @@ body::before {
     background: var(--ink);
 }
 
-/* ===== SKILLS ===== */
 .skills {
     position: relative;
     min-height: 66vh;
@@ -314,7 +311,6 @@ body::before {
     margin-top: 1.25rem;
 }
 
-/* left: inspection area */
 .inspect {
     position: relative;
     min-height: 19rem;
@@ -362,7 +358,6 @@ body::before {
     visibility: hidden;
 }
 
-/* each skill carries its own info; it is drawn into the left area on hover/focus (no JS) */
 .info {
     display: none;
     position: absolute;
@@ -401,7 +396,6 @@ body::before {
     color: var(--soft);
 }
 
-/* right: skills in an implied grid, each one a loose flat object */
 .skill-grid {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
@@ -479,8 +473,6 @@ body::before {
     grid-area: 4/5/5/7;
     margin-top: 2.6rem;
 }
-
-/* touch: a tap focuses the skill, so treat focus like hover */
 @media (hover: none) {
     .skill:focus .info {
         display: block;
@@ -497,7 +489,6 @@ body::before {
     }
 }
 
-/* ===== TABLET / MOBILE: recomposed, not shrunk ===== */
 @media (max-width: 900px) {
     .about {
         display: block;
